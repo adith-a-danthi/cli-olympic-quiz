@@ -36,6 +36,16 @@ var questions = [
     question: "Where is the Summer Olympics of 2020 being held?",
     options: ["Beijing", "London", "Tokyo", "Paris"],
     answer: "Tokyo"
+  },
+  {
+    question: "To which Greek God were the ancient Olympic Games dedicated?",
+    options: ["Athena", "Hera", "Apollo", "Zeus"],
+    answer: "Zeus"
+  },
+  {
+    question: "For which event did Abhinav Bindra win the first individual Gold medal for India?",
+    options: ["50m Air Rifle", "10m Air Rifle", "10m Air Pistol"],
+    answer: "10m Air Rifle"
   }
 ]
 
@@ -81,7 +91,7 @@ function showScores(currentPlayer) {
     if(score >= highScores[i].score) {
       log(scoreColor.inverse(`Awesome ${currentPlayer}! You're number ${i+1} on the leaderboard!`));
       log(chalk.cyan("Ping me with a screenshot and I'll update the leaderboard!"))
-      return;
+      break;
     }
   }
 
